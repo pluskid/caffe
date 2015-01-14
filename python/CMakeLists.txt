@@ -45,6 +45,7 @@ add_dependencies(pycaffe protoPy)
 target_link_libraries(pycaffe ${CAFFE_STATIC_LINK} ${PYTHON_LIBRARIES} ${Boost_LIBRARIES})
 
 set_target_properties(pycaffe PROPERTIES PREFIX "")
+set_target_properties(pycaffe PROPERTIES SUFFIX ".so")
 set_target_properties(pycaffe PROPERTIES OUTPUT_NAME "_caffe")
 
 ###    Install    #############################################################
